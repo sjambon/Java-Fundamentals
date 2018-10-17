@@ -19,6 +19,6 @@ public class Oefening8 {
         String getal2 = nummerplaat.substring(6);
         getal2 = getal1 + getal2;
         int getal = Integer.parseInt(getal2);
-        System.out.println("Het getal " + getal2 + " is " + (getal % 4 == 0 ? "" : "niet ") + "deelbaar door 4.");
+        System.out.println(String.format("Het getal %s is %s deelbaar door 4.", getal2, (getal % 4 == 0 ? "" : "niet")));
     }
 }
