@@ -17,6 +17,6 @@ public class Oefening1 {
         System.out.println("Geef een tweede geheel getal: ");
         int getal2 = scanner.nextInt();
         int minumum = Math.min(getal1, getal2);
-        System.out.println("Het minimum van opgegeven waarden is: " + minumum);
+        System.out.printf("Het minimum van opgegeven waarden is: %d%n", minumum);
     }
 }

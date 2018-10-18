@@ -15,7 +15,7 @@ public class Oefening3 {
         double lengte = scanner.nextDouble();
         System.out.println("Geef jouw gewicht in kg: ");
         double gewicht = scanner.nextDouble();
-        double bmi = gewicht/(lengte*lengte);
-        System.out.println("Jouw BMI is: " + bmi);
+        double bmi = Math.round(gewicht/(lengte*lengte));
+        System.out.printf("Jouw BMI is: %s%n", bmi);
     }
 }

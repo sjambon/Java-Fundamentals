@@ -16,7 +16,7 @@ public class Oefening4 {
         String naam = scanner.next();
         char eersteL = naam.charAt(0);
         eersteL = Character.toUpperCase(eersteL);
-        naam = naam.substring(1,naam.length());
+        naam = naam.substring(1);
         naam = eersteL + naam;
         System.out.println(naam);
     }

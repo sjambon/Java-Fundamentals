@@ -8,12 +8,12 @@ package Labo4;
 
 public class Oefening2 {
     public static void main(String[] args) {
-        int random = randomWithRange(50, 150);
-        System.out.println("Willekeurig getal tussen 50 en 150: " + random);
+        int random = randomWithRange();
+        System.out.printf("Willekeurig getal tussen 50 en 150: %d%n", random);
     }
 
-    private static int randomWithRange(int min, int max) {
-        int range = (max - min) + 1;
-        return (int)(Math.random() * range) + min;
+    private static int randomWithRange() {
+        int range = (150 - 50) + 1;
+        return (int)(Math.random() * range) + 50;
     }
 }
