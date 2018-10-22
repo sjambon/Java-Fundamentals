@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 /**
  * Dit programma geeft de minimumwaarde van twee getallen terug.
+ *
  * @author Steven Jambon
  * @version 15 oct 2018
  */

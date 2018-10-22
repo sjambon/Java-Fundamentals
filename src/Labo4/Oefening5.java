@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 /**
  * Dit programma verwijderd het eerste woorde van de zin die jij ingeeft.
+ *
  * @author Steven Jambon
  * @version 15 oct 2018
  */

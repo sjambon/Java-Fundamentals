@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 /**
  * Dit programma vormt een unieke Odisee-code adhv jouw voornaam en achternaam.
+ *
+ * @author Steven Jambon
+ * @version 15 oct 2018
  */
 
 public class Oefening10 {

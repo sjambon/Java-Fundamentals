@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 /**
  * Dit programma verandert de eerste letter van je voornaam in een hoofdletter
+ *
  * @author Steven Jambon
  * @version 15 oct 2018
  */
