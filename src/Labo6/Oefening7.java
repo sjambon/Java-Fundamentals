@@ -13,7 +13,7 @@ public class Oefening7 {
         String kortste = "";
         int kortsteWoord = zin.length();
         int woorden = telSpaties(zin);
-        int spatie = 0;
+        int spatie;
         String woord;
         for (int j = 0; j < woorden; j++) {
             if (j < woorden - 1) {
@@ -32,7 +32,7 @@ public class Oefening7 {
             }
 
         }
-        System.out.printf("Het woord met de minste klinkers is %s en het woord met de meeste klinkers is %s.", kortste, langste);
+        System.out.printf("Het woord met de minste klinkers is '%s' en het woord met de meeste klinkers is '%s'.", kortste, langste);
     }
 
     private static int telKlinkers(String str) {

@@ -10,15 +10,17 @@ public class Oefening9 {
         int breedte = scanner.nextInt();
         System.out.println("Geef hoogte (1-10):");
         int hoogte = scanner.nextInt();
+        System.out.println("Geef een karakter:");
+        char karakter = scanner.next().charAt(0);
         if (hoogte > 10 || hoogte < 1 || breedte > 10 || breedte < 1) {
             System.out.println("Ongeldige grootte");
         } else {
-            String lijn = "";
+            StringBuilder lijn = new StringBuilder();
 
             for (int i = 1; i < breedte; i++) {
-                lijn += "^ ";
+                lijn.append(karakter).append(" ");
             }
-            lijn += "^";
+            lijn.append(karakter);
             for (int j = 0; j < hoogte; j++) {
                 System.out.println(lijn);
             }
