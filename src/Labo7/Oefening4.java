@@ -7,17 +7,16 @@ public class Oefening4 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Geef een woord:");
         String woord = scanner.next();
-        double percentage = Math.round((telKlinkers(woord)/(double)woord.length())*100);
-        System.out.printf("Het woord %s bestaat voor %s procent uit klinkers.", woord, percentage);
-    }
-    private static int telKlinkers(String str) {
-        int count = 0;
-        for (int i = 0; i < str.length(); i++) {
-            if (str.charAt(i) == 'a' || str.charAt(i) == 'e' || str.charAt(i) == 'i'
-                    || str.charAt(i) == 'o' || str.charAt(i) == 'u') {
-                count++;
+        int aantal = 0;
+        int i = 0;
+        while (i < woord.length()) {
+            if (woord.charAt(i) == 'a' || woord.charAt(i) == 'e' || woord.charAt(i) == 'i'
+                    || woord.charAt(i) == 'o' || woord.charAt(i) == 'u') {
+                aantal++;
             }
+            i++;
         }
-        return count;
+        double percentage = Math.round((aantal/(double)woord.length())*100);
+        System.out.printf("Het woord %s bestaat voor %s procent uit klinkers.", woord, percentage);
     }
 }
