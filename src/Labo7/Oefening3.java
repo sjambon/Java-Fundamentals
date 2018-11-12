@@ -3,6 +3,7 @@ package Labo7;
 import java.util.Scanner;
 
 public class Oefening3 {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Geef een waarde voor x :");
