@@ -11,9 +11,11 @@ public class Oefening3 {
         if (!zin.contains("Pascal") && !zin.contains("pascal")) {
             System.out.println("ERROR: de zin moet het woord 'pascal' bevatten.");
         } else {
-            zin = zin.replace("pascal", "java");
-            zin = zin.replace("Pascal", "Java");
-            System.out.println(zin);
+            while (zin.contains("pascal")) {
+                int pascalLocatie = zin.indexOf("pascal");
+                zin = zin.substring(0, pascalLocatie) + "java" + zin.substring(pascalLocatie + 6);
+                System.out.println(zin);
+            }
         }
     }
 }
