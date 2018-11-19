@@ -12,9 +12,9 @@ public class Oefening11 {
         boolean m = true;
         boolean a = true;
         boolean j = true;
-        boolean geval1 = (m == true || a == true ? j == true : j == false);
-        boolean geval2 = (m == false ? a == true : a == false);
-        boolean geval3 = (a == true ? j == false : j == true);
+        boolean geval1 = ((m || a) == j);
+        boolean geval2 = (!m ? a : !a);
+        boolean geval3 = (a ? !j : j);
         System.out.println("\t---------------------------------------------\n\twaarderingen\t\t\t uitspraken\n\t---------------------------------------------");
         System.out.println("\tm\ta\tj\t1\t2\t3");
         System.out.println("\t" + m + "\t" + a + "\t" + j + "\t" + geval1 + "\t" + geval2 + "\t" + geval3);
