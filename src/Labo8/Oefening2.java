@@ -7,8 +7,8 @@ public class Oefening2 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Hoeveel getallen wil je ingeven?");
         int aantal = sc.nextInt();
-        if (aantal <= 2) {
-            System.out.println("ERROR: Je met minstens 3 getallen ingeven!");
+        if (aantal < 2) {
+            System.out.println("ERROR: Je met minstens 2 getallen ingeven!");
         } else {
             System.out.printf("Geef %s getallen in:", aantal);
             int kleinste = sc.nextInt();
