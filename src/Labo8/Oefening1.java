@@ -21,6 +21,3 @@ public class Oefening1 {
         System.out.printf("S is %s", s);
     }
 }
-
-
-//LUCA JE GING NIET KIJKEN!
