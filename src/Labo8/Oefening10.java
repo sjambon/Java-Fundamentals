@@ -11,7 +11,7 @@ public class Oefening10 {
         gevallenOnderzoek.setA(false);
         gevallenOnderzoek.setJ(true);
         System.out.println(gevallenOnderzoek.toString());
-        gevallenOnderzoek.setM(false);
+        gevallenOnderzoek.setM();
         gevallenOnderzoek.setA(true);
         System.out.println(gevallenOnderzoek.toString());
         gevallenOnderzoek.setJ(false);
@@ -24,13 +24,7 @@ public class Oefening10 {
     }
 
     private static class GevallenOnderzoek {
-        boolean m;
-        boolean a;
-        boolean j;
-
-        boolean geval1;
-        boolean geval2;
-        boolean geval3;
+        boolean m, a, j, geval1, geval2, geval3;
 
         GevallenOnderzoek(boolean m, boolean a, boolean j) {
             this.m = m;
@@ -40,8 +34,8 @@ public class Oefening10 {
             this.geval2 = (!m == a);
             this.geval3 = (a != j);        }
 
-        private void setM(boolean newM) {
-            this.m = newM;
+        private void setM() {
+            this.m = false;
         }
         private void setA(boolean newA) {
             this.a = newA;
