@@ -1,7 +1,5 @@
 package Labo10;
 
-import java.util.Scanner;
-
 public class Oefening2 {
     public static void main(String[] args) {
         int[] array = new int[10];

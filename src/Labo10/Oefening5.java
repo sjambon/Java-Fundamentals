@@ -1,15 +1,13 @@
 package Labo10;
 
 import java.util.Scanner;
+import Miscellaneous.*;
 
 public class Oefening5 {
 
     public static void main(String[] args) {
-        int[] array = new int[10];
         Scanner sc = new Scanner(System.in);
-        for (int i = 0; i < array.length; i++) {
-            array[i] = (int) (Math.random() * 100.0);
-        }
+        int[] array = RandomArray.createIntArray(10, 100.0 - 50.0);
         System.out.println("Geef een getal:");
         int getal = sc.nextInt();
         int aantal = max25VerschilMetGetal(array, getal);

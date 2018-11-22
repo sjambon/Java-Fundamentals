@@ -1,11 +1,8 @@
 package Labo10;
 
-import java.util.Random;
-
 public class Oefening3 {
     public static void main(String[] args) {
         int[] array = new int[100];
-        Random randomGenerator = new Random();
         for (int i = 0; i < array.length; i++) {
             array[i] = (int) (Math.random() * 100.0 - 50.0);
         }
