@@ -18,8 +18,8 @@ public class Oefening4 {
     }
     private static int[] metHulpArray(int[] array) {
         int[] hulpArray = new int[10];
-        for (int j = 1; j < array.length; j++) {
-            hulpArray[j] = array[array.length-j];
+        for (int j = 0; j < array.length; j++) {
+            hulpArray[j] = array[array.length-1-j];
         }
         array = hulpArray;
         return array;
