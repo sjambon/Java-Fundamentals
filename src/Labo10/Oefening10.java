@@ -1,4 +1,4 @@
-package Labo9;
+package Labo10;
 
 import Miscellaneous.RandomArray;
 import java.util.ArrayList;

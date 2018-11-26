@@ -11,7 +11,7 @@ public class Oefening5 {
         System.out.println("Geef een getal:");
         int getal = sc.nextInt();
         int aantal = max25VerschilMetGetal(array, getal);
-        System.out.printf("Er %s waarden die max 25 verschillen met %s.", aantal, getal);
+        System.out.printf("Er zijn %s waarden die maximaal 25 verschillen met %s.", aantal, getal);
     }
 
     private static int max25VerschilMetGetal(int[] array, int getal) {

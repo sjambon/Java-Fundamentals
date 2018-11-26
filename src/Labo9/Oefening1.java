@@ -3,20 +3,21 @@ package Labo9;
 import java.util.Scanner;
 
 public class Oefening1 {
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String[] array = new String[10];
+        int[] array = new int[10];
         for (int i = 0; i < array.length; i++) {
-            System.out.println("Geef een woord");
-            array[i] = sc.next();
+            System.out.println("Geef een getal");
+            array[i] = sc.nextInt();
         }
         for (int i = 0; i < array.length / 2; i++) {
-            String temp = array[i];
+            int temp = array[i];
             array[i] = array[array.length - 1 - i];
             array[array.length - 1 - i] = temp;
         }
-        for (String item : array) {
-            System.out.println(item);
+        for (int item : array) {
+            System.out.print(item + " ");
         }
     }
 }

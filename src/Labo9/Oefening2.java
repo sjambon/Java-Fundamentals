@@ -1,10 +1,17 @@
 package Labo9;
 
+import Miscellaneous.RandomArray;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class Oefening2 {
     public static void main(String[] args) {
-        int[] array = new int[10];
-        int getal = 5;
-        checkIfInArray(getal, array);
+        int[] array = RandomArray.createIntArray(10,10);
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Geef een getal dat gezocht moet worden in de willekeurige array:");
+        int getal = sc.nextInt();
+        System.out.printf("Bevindt het getal %s zich in de array %s?: %s",getal, Arrays.toString(array), checkIfInArray(getal, array));
     }
 
     private static boolean checkIfInArray(int getal, int[] array) {
