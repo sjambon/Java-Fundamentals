@@ -1,4 +1,4 @@
-package Labo10;
+package Labo9;
 
 public class Oefening9 {
     public static void main(String[] args) {

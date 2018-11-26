@@ -1,6 +1,5 @@
-package Labo10;
+package Labo9;
 
-import java.util.Arrays;
 import java.util.Random;
 
 public class Oefening8 {

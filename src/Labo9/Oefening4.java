@@ -1,4 +1,4 @@
-package Labo10;
+package Labo9;
 
 import java.util.Arrays;
 
@@ -7,9 +7,8 @@ public class Oefening4 {
     public static void main(String[] args) {
         int[] array = new int[10];
         for (int i = 0; i < array.length; i++) {
-            array[i] = (int) (Math.random() * 10.0);
+            array[i] = i + 1;
         }
-        System.out.printf("Array met 10 willekeurige getallen: %s.\n", Arrays.toString(array));
         int[] metHulpArray = metHulpArray(array);
         int[] zonderHulpArray = zonderHulpArray(array);
         System.out.printf("Array met behulp van een hulp array: %s.\n", Arrays.toString(metHulpArray));

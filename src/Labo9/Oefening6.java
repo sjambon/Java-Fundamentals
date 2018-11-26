@@ -1,4 +1,4 @@
-package Labo10;
+package Labo9;
 
 import Miscellaneous.*;
 
