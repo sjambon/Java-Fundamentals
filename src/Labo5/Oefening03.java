@@ -12,7 +12,7 @@ public class Oefening03 {
         if (practicumPunt < theoriePunt) {
             System.out.printf("Je totaal is: %s", practicumPunt);
         } else {
-            double eindresultaat = Math.round((practicumPunt + theoriePunt) / 2 * 10) / 10;
+            double eindresultaat = (double) Math.round((practicumPunt + theoriePunt) / 2 * 10) / 10;
             System.out.printf("Je totaal is: %s", eindresultaat);
         }
     }

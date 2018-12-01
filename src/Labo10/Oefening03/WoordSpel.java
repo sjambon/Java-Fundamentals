@@ -2,9 +2,9 @@ package Labo10.Oefening03;
 
 public class WoordSpel {
     final int MAX_BEURTEN = 20;
-    String[] array;
-    String woord;
-    boolean[] lettersGeraden;
+    private String[] array;
+    private String woord;
+    private boolean[] lettersGeraden;
     int beurten;
 
     WoordSpel(String[] array, String woord) {
