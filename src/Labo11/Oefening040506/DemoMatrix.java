@@ -1,4 +1,4 @@
-package Labo10.Oefening040506;
+package Labo11.Oefening040506;
 
 import java.util.Arrays;
 import java.util.Scanner;

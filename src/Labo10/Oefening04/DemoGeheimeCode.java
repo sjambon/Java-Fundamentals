@@ -1,8 +1,22 @@
-package Labo10.Oefening01;
+package Labo10.Oefening04;
 
 import java.util.Scanner;
 
+/**
+ * Het uitvoeren van de methodes in de klasse GeheimeCode.
+ *
+ * @author Steven Jambon
+ * @version December 2018
+ */
 public class DemoGeheimeCode {
+
+    /**
+     * Hoofdmethode
+     *
+     * @param args
+     * @see GeheimeCode#berekenSom(String)
+     * @see GeheimeCode#juistePositie(String)
+     */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Geef een 5-cijferige code:");
