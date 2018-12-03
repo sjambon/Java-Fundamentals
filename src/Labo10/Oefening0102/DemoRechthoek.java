@@ -19,15 +19,20 @@ public class DemoRechthoek {
         } else {
             System.out.println("De rechthoek is geen vierkant.");
         }
-        System.out.printf("De oppervlakte van de rechtoek is: %s", rechthoek.berekenOpp());
-        System.out.println("Geef de x-positie waarvan je wilt weten of deze in de rechthoek ligt:");
-        int xPos = sc.nextInt();
-        System.out.println("Geef de y-positie waarvan je wilt weten of deze in de rechthoek ligt:");
-        int yPos = sc.nextInt();
-        if (rechthoek.isIn(xPos, yPos)) {
-            System.out.printf("Het punt [%s,%s] ligt in de rechthoek.", xPos, yPos);
-        } else {
-            System.out.printf("Het punt [%s,%s] ligt niet in de recthoek.", xPos, yPos);
-        }
+        System.out.printf("De oppervlakte van de rechtoek is: %s\n", rechthoek.berekenOpp());
+        System.out.printf("De omtrek van de rechtoek is: %s\n", rechthoek.berekenOmtrek());
+        int xPos;
+        int yPos;
+        do {
+            System.out.println("Geef de x-positie waarvan je wilt weten of deze in de rechthoek ligt:");
+            xPos = sc.nextInt();
+            System.out.println("Geef de y-positie waarvan je wilt weten of deze in de rechthoek ligt:");
+            yPos = sc.nextInt();
+            if (rechthoek.isIn(xPos, yPos)) {
+                System.out.printf("Het punt [%s,%s] ligt in de rechthoek.\n", xPos, yPos);
+            } else {
+                System.out.printf("Het punt [%s,%s] ligt niet in de rechthoek.\n", xPos, yPos);
+            }
+        }while (rechthoek.isIn(xPos, yPos));
     }
 }

@@ -11,15 +11,17 @@ public class Dobbelsteen {
         this.minimumOgen = minimumOgen;
         this.maximumOgen = maximumOgen;
     }
+
     public Dobbelsteen() {
         this.minimumOgen = 1;
         this.maximumOgen = 6;
     }
-     public int gooi() {
-         Random random = new Random();
-         laatsteWorp = random.nextInt(maximumOgen-minimumOgen+1);
-         return laatsteWorp;
-     }
+
+    public int gooi() {
+        Random random = new Random();
+        laatsteWorp = random.nextInt((maximumOgen - minimumOgen)) + 1;
+        return minimumOgen + laatsteWorp;
+    }
 
 
 }

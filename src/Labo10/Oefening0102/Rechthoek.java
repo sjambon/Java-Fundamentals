@@ -18,11 +18,14 @@ public class Rechthoek {
     }
 
     public int berekenOpp() {
-        int oppervlakte = lengte * breedte;
-        return oppervlakte;
+        return lengte * breedte;
+    }
+
+    public int berekenOmtrek() {
+        return 2 * lengte + 2 * breedte;
     }
 
     public boolean isIn(int xPos, int yPos) {
-        return x + breedte <= xPos && y + lengte <= yPos && x >= xPos && y >= yPos;
+        return x + breedte >= xPos && y + lengte >= yPos && x <= xPos && y <= yPos;
     }
 }

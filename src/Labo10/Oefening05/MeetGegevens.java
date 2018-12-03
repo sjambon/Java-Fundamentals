@@ -24,12 +24,12 @@ public class MeetGegevens {
      */
 
     public boolean zijnAlleElementenOnderlingVerschillend() {
-        ArrayList<Integer> origineel = new ArrayList<>();
-        for (int item : array) {
-            if (origineel.contains(item)) {
-                return false;
-            } else {
-                origineel.add(item);
+        int[] originelen = new int[array.length];
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array.length; j++) {
+                if (i != j && array[i] == array[j]) {
+                    return false;
+                }
             }
         }
         return true;
