@@ -1,4 +1,4 @@
-package Labo11.Oefening03;
+package Labo11.Oefening01;
 
 import java.util.Random;
 import java.util.Scanner;
