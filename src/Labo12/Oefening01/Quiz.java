@@ -24,9 +24,8 @@ class Quiz {
     }
 
     void voegVraagAntwoordToe(String vraag, String antwoord) {
-        int lengte = vragen.length;
-        String[] nieuweVragen = new String[lengte];
-        String[] nieuweAntwoorden = new String[lengte];
+        String[] nieuweVragen = new String[vragen.length];
+        String[] nieuweAntwoorden = new String[vragen.length];
         for (int i = 0; i < vragen.length; i++) {
             nieuweVragen[i] = vragen[i];
             nieuweAntwoorden[i] = antwoorden[i];
