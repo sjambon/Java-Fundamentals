@@ -3,6 +3,7 @@ package Labo12.Oefening01;
 import java.util.Scanner;
 
 public class DemoQuiz {
+
     public static void main(String[] args) {
         String[] vragen = new String[]{"Welk woord duidt aan dat een dier of plant zowel mannelijk als vrouwelijk is?", "Wat is de vierkantswortel van 900?", "Van welke twee elementen is water gemaakt?", "Wat is de heetste planeet in ons zonnestelsel?"};
         String[] antwoorden = new String[]{"Hermafrodiet", "Dertig", "Zuurstof en waterstof", "Venus"};
