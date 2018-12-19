@@ -1,20 +1,20 @@
 package Labo12.Oefening01;
 
-public class Quiz {
+class Quiz {
 
     private String[] vragen;
     private String[] antwoorden;
 
-    public Quiz(String[] vragen, String[] antwoorden) {
+    Quiz(String[] vragen, String[] antwoorden) {
         this.vragen = vragen;
         this.antwoorden = antwoorden;
     }
 
-    public String geefVraag() {
+    String geefVraag() {
         return vragen[(int)(Math.random() * (vragen.length-1))];
     }
 
-    public boolean checkAntwoordVraag(String vraag, String antwoord) {
+    boolean checkAntwoordVraag(String vraag, String antwoord) {
         for (int i = 0; i < vragen.length; i++) {
             if (vragen[i].equals(vraag) && antwoorden[i].equals(antwoord)) {
                 return true;
@@ -23,7 +23,7 @@ public class Quiz {
         return false;
     }
 
-    public void voegVraagAntwoordToe(String vraag, String antwoord) {
+    void voegVraagAntwoordToe(String vraag, String antwoord) {
         int lengte = vragen.length;
         String[] nieuweVragen = new String[lengte];
         String[] nieuweAntwoorden = new String[lengte];
