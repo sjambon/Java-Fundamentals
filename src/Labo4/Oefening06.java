@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class Oefening06 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Geef eem zin: ");
+        System.out.println("Geef een zin: ");
         String zin = scanner.nextLine();
         int eersteSpace = zin.indexOf(" ");
         int tweedeSpace = zin.substring(eersteSpace + 1).indexOf(" ");
