@@ -1,11 +1,24 @@
-package Labo10.Oefening02;
+package Labo10.Oefening05;
 
 import Miscellaneous.RandomArray;
 
 import java.util.Arrays;
 
+/**
+ * Klasse die de MeetGegevens klasse uitvoert.
+ *
+ * @author Steven Jambon
+ * @version December 2018
+ */
+
 public class DemoMeetgegevens {
 
+    /**
+     * Hoofdmethode
+     * @param args
+     * @see MeetGegevens#bepaalKleinstePositiefVerschil()
+     * @see MeetGegevens#zijnAlleElementenOnderlingVerschillend()
+     */
     public static void main(String[] args) {
         int[] array = RandomArray.createIntArray(10, 100);
         MeetGegevens meetgegevens = new MeetGegevens(array);

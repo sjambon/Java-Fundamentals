@@ -1,4 +1,4 @@
-package Labo10.Oefening03;
+package Labo11.Oefening01;
 
 public class WoordSpel {
     final int MAX_BEURTEN = 20;

@@ -1,4 +1,4 @@
-package Labo10.Oefening040506;
+package Labo11.Oefening02030405;
 
 public class Matrix {
     private int[][] matrix;
@@ -54,5 +54,21 @@ public class Matrix {
                 }
             }
         }
+    }
+
+    int[][] lokaleMaxima() {
+        int[][] lokaalMaxima = new int[matrix.length][matrix[0].length];
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                if (j - 1 >= 0 && i - 1 >= 0 && j + 1 < matrix[i].length && i + 1 < matrix.length) {
+                    if (matrix[i][j] > matrix[i - 1][j - 1] && matrix[i][j] > matrix[i - 1][j] && matrix[i][j] > matrix[i - 1][j + 1] && matrix[i][j] > matrix[i][j - 1] && matrix[i][j] > matrix[i][j + 1] && matrix[i][j] > matrix[i][j + 1] && matrix[i][j] > matrix[i + 1][j - 1] && matrix[i][j] > matrix[i + 1][j] && matrix[i][j] > matrix[i + 1][j] && matrix[i][j] > matrix[i + 1][j + 1]) {
+                        lokaalMaxima[i][j] = 1;
+                    } else {
+                        lokaalMaxima[i][j] = 0;
+                    }
+                } else lokaalMaxima[i][j] = 0;
+            }
+        }
+        return lokaalMaxima;
     }
 }
