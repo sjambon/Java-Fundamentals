@@ -2,7 +2,7 @@ package Labo6;
 
 public class Oefening01 {
 
-    public static void main(String args[]){
+    public static void main(String[] args){
         double resultaat;
         for(int i = -20; i <= 50; i+= 5) {
             resultaat = i * 1.8 + 32;

@@ -9,15 +9,11 @@ package Labo2;
 
 public class Oefening02 {
     public static void main(String[] args) {
-        int getal1 = 5;
-        int getal2 = 2;
-        int getal3 = 3;
-        int getal4 = 7;
-        int aantal = 4;
+        int getal1 = 5, getal2 = 2, getal3 = 3, getal4 = 7, aantal = 4;
 
         int totaal = (getal1 + getal2 + getal3 + getal4);
         int gemiddelde1 = totaal / aantal; // Gehele gemiddelde
-        double gemiddelde2 = totaal / aantal; // Reeel gemiddelde
+        double gemiddelde2 = totaal /(double)aantal; // Reeel gemiddelde
         int rest = totaal % aantal;
 
 

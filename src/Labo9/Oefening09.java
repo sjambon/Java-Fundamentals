@@ -12,7 +12,7 @@ public class Oefening09 {
         while (gokCounter < MAX_GOKKEN && !geraden) {
             System.out.printf("Poging %s : geef de code:", gokCounter + 1);
             String gok = sc.next();
-            int[] gokArray = {gok.charAt(0) - 48, gok.charAt(1) - 48, gok.charAt(2) - 48, gok.charAt(3) - 48, gok.charAt(4) - 48};
+            int[] gokArray = {gok.charAt(0) - '0', gok.charAt(1) - '0', gok.charAt(2) - '0', gok.charAt(3) - '0', gok.charAt(4) - '0'};
             int aantalCorrect = 0;
             int som = 0;
             for (int i = 0; i < gokArray.length; i++) {

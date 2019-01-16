@@ -1,6 +1,7 @@
 package Labo9;
 
 import java.util.Scanner;
+
 import Miscellaneous.*;
 
 public class Oefening05 {

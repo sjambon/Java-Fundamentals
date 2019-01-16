@@ -6,7 +6,6 @@ public class Oefening04 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int resultaat = 0;
         System.out.println("Geef een getal:");
         int getal = scanner.nextInt();
         System.out.println("Geef een tweede getal:");

@@ -12,11 +12,7 @@ public class Oefening05 {
         if (maand == 2) {
             System.out.println("Is het een schrikkeljaar?");
             boolean schrikkeljaar = scanner.nextBoolean();
-            if (schrikkeljaar) {
-                dagen = 29;
-            } else {
-                dagen = 28;
-            }
+            dagen = (schrikkeljaar ? 29 : 28);
         } else {
             dagen = maanden[maand + 1];
         }

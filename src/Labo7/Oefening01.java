@@ -16,6 +16,6 @@ public class Oefening01 {
             kapitaal *= rente;
             jaar++;
         }
-        System.out.printf("Het startkapitaal is verdubeld na %s jaar", jaar);
+        System.out.printf("Het startkapitaal is verdubbeld na %s jaar", jaar);
     }
 }

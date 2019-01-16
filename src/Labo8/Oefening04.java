@@ -17,7 +17,7 @@ public class Oefening04 {
                 if (omgekeerd.toString().equals(woord)) {
                     System.out.printf("Het woord '%s' is een palindroom.\n", woord);
                 } else {
-                    System.out.printf("Het woor '%s' is geen palindroom want het omgekeerde van '%s' is '%s'.\n", woord, woord, omgekeerd);
+                    System.out.printf("Het woord '%s' is geen palindroom want het omgekeerde van '%s' is '%s'.\n", woord, woord, omgekeerd);
                 }
             }
         } while (!woord.equals("STOP"));

@@ -19,9 +19,9 @@ public class Oefening09 {
             int uurVal = Integer.parseInt(uur);
             if (uurVal > 12) {
                 uurVal -= 12;
-                uur = Integer.toString(uurVal) + "PM";
+                uur = uurVal + "PM";
             } else {
-                uur = Integer.toString(uurVal) + "AM";
+                uur = uurVal + "AM";
             }
             System.out.printf("Het is %s", uur);
         }

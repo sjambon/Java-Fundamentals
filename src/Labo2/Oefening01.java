@@ -15,8 +15,7 @@ public class Oefening01 {
         System.out.println("Geef het karakter waarvan je de numerieke waarde wilt weten:");
         Scanner scanner = new Scanner(System.in);
         char karakter = scanner.next().charAt(0); // Het karakter inlezen van System.in
-        int value = karakter; // Vormt het karakter om naar een int
         System.out.println("Dit is het karakter: " + karakter);
-        System.out.println("De numerieke waarde ervan is: " + value);
+        System.out.println("De numerieke waarde ervan is: " + (int) karakter);
     }
 }

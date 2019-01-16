@@ -16,7 +16,7 @@ public class Oefening07 {
         double bedrag = scanner.nextDouble();
         System.out.println("Geef het winstpercentage: ");
         int percentage = scanner.nextInt();
-        double eindbedrag = bedrag * (percentage / 100);
-        System.out.println(eindbedrag);
+        double eindbedrag = bedrag * (percentage / 100.0 + 1);
+        System.out.println("Het eindbedrag bedraagt: " + eindbedrag + "€");
     }
 }
