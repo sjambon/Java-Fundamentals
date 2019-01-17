@@ -7,10 +7,10 @@ package Examen;
 
 public class Demo {
     public static void main(String[] args) {
-        String[] aantallen = {"32", "33", "34", "35", "36", "37", "38", "39"};
-        Artikel artikel = new Artikel("Donkergrijze Lage Sportieve Sneaker Adidas VL Court 2.0", aantallen);
+        String[] matenTabel = {"32", "33", "34", "35", "36", "37", "38", "39"};
+        Artikel artikel = new Artikel("Donkergrijze Lage Sportieve Sneaker Adidas VL Court 2.0", matenTabel);
         for (int i = 0; i < 10; i++) {
-            String maat = aantallen[(int) (Math.random() * 8)];
+            String maat = matenTabel[(int) (Math.random() * 8)];
             int aantal = (int) (Math.random() * 10);
             System.out.println("Maat: " + maat + "\tAantal: " + aantal + "\t" + artikel.ingaveVerkochteMaten(maat, aantal));
         }
