@@ -11,7 +11,7 @@ class Quiz {
     }
 
     String geefVraag() {
-        return vragen[(int)(Math.random() * (vragen.length-1))];
+        return vragen[(int) (Math.random() * (vragen.length - 1))];
     }
 
     boolean checkAntwoordVraag(String vraag, String antwoord) {
@@ -24,16 +24,16 @@ class Quiz {
     }
 
     void voegVraagAntwoordToe(String vraag, String antwoord) {
-        String[] nieuweVragen = new String[vragen.length];
-        String[] nieuweAntwoorden = new String[vragen.length];
+        String[] nieuweVragen = new String[vragen.length + 1];
+        String[] nieuweAntwoorden = new String[vragen.length + 1];
         for (int i = 0; i < vragen.length; i++) {
             nieuweVragen[i] = vragen[i];
             nieuweAntwoorden[i] = antwoorden[i];
         }
         for (int i = 0; i < vragen.length - 1; i++) {
             if (!vragen[i].equals(vraag) && !antwoorden[i].equals(antwoord)) {
-                nieuweVragen[nieuweVragen.length-1] = vraag;
-                nieuweAntwoorden[nieuweAntwoorden.length-1] = antwoord;
+                nieuweVragen[nieuweVragen.length - 1] = vraag;
+                nieuweAntwoorden[nieuweAntwoorden.length - 1] = antwoord;
                 this.vragen = nieuweVragen;
                 this.antwoorden = nieuweAntwoorden;
             }
